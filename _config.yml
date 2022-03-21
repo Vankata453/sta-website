@@ -6,6 +6,7 @@ exclude:
 output: true
 description: SuperTux Advance is a fan game of SuperTux written in Squirrel using Brux GDK. The name comes from the graphical style, which uses a lower resolution display and a sprite style similar to Sonic Advance.
 repository: supertux-advance/supertux-advance
+baseurl: /supertux-advance.github.io
 
 remote_theme: pages-themes/modernist@v0.2.0
 plugins:

@@ -5,7 +5,7 @@ layout: default
 
 <h5 id="latest-post-home-info">{{ site.posts.first.title }} - <a href="{{ site.posts.first.url }}">Read now!</a></h5>
 
-![SuperTux Advance Cover](/images/banner.png){:id="cover"}
+![SuperTux Advance Cover]({{ site.baseurl }}/images/banner.png){:id="cover"}
 
 # What is SuperTux Advance?
 
@@ -19,7 +19,7 @@ After being humiliated by Tux on the tracks, Nolok decides to get his revenge by
 
 ## Installation
 
-Go to [Install](/install) to view instructions on how to install SuperTux Advance.
+Go to [Install]({{ site.baseurl }}/install) to view instructions on how to install SuperTux Advance.
 
 ## Controls
 
@@ -49,7 +49,7 @@ You can rebind the controls from the Options menu found on the title screen.
 
 *Q:* The game crashed. The log says a function or identifier wasn't defined.
 
-**A:** The game may need a newer version of Brux GDK. Download the nightly build from the link in the [installation instructions](/install).
+**A:** The game may need a newer version of Brux GDK. Download the nightly build from the link in the [installation instructions]({{ site.baseurl }}/install).
 
 *Q:* Does this game have Mac support?
 

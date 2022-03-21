@@ -30,7 +30,7 @@ You can use [SuperTux Advance Translator](https://vankata453.github.io/sta-trans
 ### Finishing
 If you have finished creating or improving a translation, you can contribute it in two ways:
 
-1. Choose a method to [contact us](/contact) with and send us the `.json` file directly.
+1. Choose a method to [contact us]({{ site.baseurl }}/contact) with and send us the `.json` file directly.
 2. [Open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request){:target="_blank"} to the [SuperTux Advance repository](https://github.com/KelvinShadewing/supertux-advance){:target="_blank"} (more info above).
 
 ## Contributing through donations

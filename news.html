@@ -4,7 +4,7 @@ layout: default
 ---
 
 <h1>Latest post:</h1>
-<a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a> - {{ site.posts.first.date | date: "%A, %B %e, %Y" }}
+<a href="{{ site.baseurl }}{{ site.posts.first.url }}">{{ site.posts.first.title }}</a> - {{ site.posts.first.date | date: "%A, %B %e, %Y" }}
 
 <h1 class="spacing-top">All posts:</h1>
 <ul id="news">
@@ -15,7 +15,7 @@ layout: default
       <h5 class="date" id="{{ post.date | date: '%m%d%Y' }}">{{ post.date | date: "%A, %B %e, %Y" }}</h5>
     {% endif %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
