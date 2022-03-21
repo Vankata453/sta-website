@@ -1,0 +1,49 @@
+---
+title: News
+layout: default
+---
+
+<h1>Latest post:</h1>
+<a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a> - {{ site.posts.first.date | date: "%A, %B %e, %Y" }}
+
+<h1 class="spacing-top">All posts:</h1>
+<ul id="news">
+  {% for post in site.posts %}
+    {% capture date %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
+    {% capture next_date %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
+    {% if date != next_date %}
+      <h5 class="date" id="{{ post.date | date: '%m%d%Y' }}">{{ post.date | date: "%A, %B %e, %Y" }}</h5>
+    {% endif %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- Script to check if a given date of posts is today or yesterday and note that if so. -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const today = new Date();
+      const yesterday = new Date();
+      yesterday.setDate(today.getDate() - 1);
+
+      const dateStamps = document.getElementsByClassName("date");
+      for (id = 0; id < dateStamps.length && id < 2; id++) {
+          const dateStamp = dateStamps[id];
+          if (dateStamp.id == `${getMonth(today)}${getDate(today)}${today.getFullYear()}`) {
+              dateStamp.innerHTML = `Today (${dateStamp.innerHTML})`;
+          }
+          else if (dateStamp.id == `${getMonth(yesterday)}${getDate(yesterday)}${yesterday.getFullYear()}`) {
+              dateStamp.innerHTML = `Yesterday (${dateStamp.innerHTML})`;
+          }
+      }
+  });
+
+  function getDate(dateObj) {
+      return ("0" + dateObj.getDate()).slice(-2);
+  }
+
+  function getMonth(dateObj) {
+      return ("0" + (dateObj.getMonth() + 1)).slice(-2);
+  }
+</script>

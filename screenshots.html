@@ -1,0 +1,15 @@
+---
+title: Screenshots
+layout: default
+lightbox: 1
+---
+
+<center>
+    {% assign image_counter = 1 %}
+    {% for image in site.static_files %}
+        {% if image.path contains 'images/screenshots' %}
+            <a href="{{ site.baseurl }}{{ image.path }}" data-lightbox="screenshot"><img class="screenshot" src="{{ site.baseurl }}{{ image.path }}" alt="Screenshot {{ image_counter }}"></a>
+            {% assign image_counter = image_counter | plus:1 %}
+        {% endif %}
+    {% endfor %}
+</center>

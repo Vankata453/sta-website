@@ -1,0 +1,28 @@
+---
+header:
+  - type: placeholder
+  - url: /
+    title: Welcome
+    identifier: welcome
+    description: Welcome to SuperTux Advance!
+  - url: /install
+    title: Install
+    identifier: install
+    description: Install SuperTux Advance.
+  - url: /news
+    title: News
+    identifier: news
+    description: SuperTux Advance news.
+  - url: /screenshots
+    title: Screenshots
+    identifier: screenshots
+    description: Screenshots of SuperTux Advance.
+  - url: /contribute
+    title: Contribute
+    identifier: contribute
+    description: Contributing to the project + how to donate to support SuperTux Advance development.
+  - url: /contact
+    title: Contact
+    identifier: contact
+    description: Contact the community!
+---

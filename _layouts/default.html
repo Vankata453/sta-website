@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% if page.lightbox == 1 %}<link rel="stylesheet" href="/lightbox/css/lightbox.css">{% endif %}
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
+        <img src="/images/title.png" id="title">
+        <ul>
+          {% for item in site.menus.header %}
+            {% if item.type == "placeholder" %}{% continue %}{% endif %}
+            <li class="menu-item-{{ forloop.index }}"{% if page.title == item.title or page.id and item.identifier == "news" %} id="selected-menu-item"{% endif %}>
+              <a href="{{ item.url }}" title="{{ item.description }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+    </div>
+  </body>
+  {% if page.lightbox == 1 %}<script src="/lightbox/js/lightbox-plus-jquery.js"></script>{% endif %}
+</html>
