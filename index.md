@@ -3,7 +3,7 @@ title: Welcome
 layout: default
 ---
 
-<h5 id="latest-post-home-info">{{ site.posts.first.title }} - <a href="{{ site.posts.first.url }}">Read now!</a></h5>
+<h5 id="latest-post-home-info">{{ site.posts.first.title }} - <a href="{{ site.baseurl }}{{ site.posts.first.url }}">Read now!</a></h5>
 
 ![SuperTux Advance Cover]({{ site.baseurl }}/images/banner.png){:id="cover"}
 
