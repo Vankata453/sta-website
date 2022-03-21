@@ -16,11 +16,13 @@
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
         <img src="{{ site.baseurl }}/images/title.png" id="title">
         <ul>
-          {% for item in site.menus.header %}
+          {% assign menu_item_counter = 1 %}
+          {% for item in site.data.menus.header %}
             {% if item.type == "placeholder" %}{% continue %}{% endif %}
-            <li class="menu-item-{{ forloop.index }}"{% if page.title == item.title or page.id and item.identifier == "news" %} id="selected-menu-item"{% endif %}>
+            <li class="menu-item-{{ menu_item_counter }}"{% if page.title == item.title or page.id and item.identifier == "news" %} id="selected-menu-item"{% endif %}>
               <a href="{{ site.baseurl }}{{ item.url }}" title="{{ item.description }}">{{ item.title }}</a>
             </li>
+            {% assign menu_item_counter = menu_item_counter | plus:1 %}
           {% endfor %}
         </ul>
       </header>
