@@ -61,9 +61,9 @@ $baseurl: "../../";
 
 .space-between * { display: inline-block; }
 
-html { background-image: url($baseurl + "/images/bg.png"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; height: 100%; }
+html { background-image: url($baseurl + "images/bg.png"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; height: 100%; }
 
-body { padding: 50px 0; margin: 0; font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; min-height: calc(100% - 100px); }
+body { padding: 50px 0; margin: 0; font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; min-height: calc(100% - 100px); color: white; }
 
 .wrapper { width: 740px; margin: 0 auto; background: #DEDEDE; box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px; }
 
@@ -73,9 +73,9 @@ a { color: #069; text-decoration: none; }
 
 p { margin: 0 0 20px; padding: 0; }
 
-strong { color: #222; font-weight: 700; }
+strong { font-weight: 700; }
 
-header { background: #C6EAFA; position: relative; padding: 15px 20px 8px; border-bottom: 1px solid #B2D2E1; text-align: center;}
+header { background: #003090; position: relative; padding: 15px 20px 8px; border-bottom: 1px solid #626d83; text-align: center;}
 header h1 { margin: 0; padding: 0; font-size: 24px; line-height: 1.2; color: #069; text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0; }
 header.without-description h1 { margin: 10px 0; }
 header p { margin: 0; color: #61778B; width: 300px; font-size: 13px; }
@@ -92,11 +92,11 @@ header ul li a { line-height: 1; font-size: 15px; color: #fff; font-weight: bold
 // header ul a strong { font-size: 14px; display: block; color: #fff; -webkit-font-smoothing: antialiased; }
 @media (max-width: 570px) { header ul li a { font-size: 13px; } }
 
-section { padding: 65px 20px 10px 20px; font-size: 18px; border-top: 1px solid #fff; background: linear-gradient(#fafafa, #DEDEDE 700px); position: relative; }
+section { padding: 65px 20px 10px 20px; font-size: 18px; border-top: 1px solid #626d83; background:linear-gradient(#101080, #000040 700px); position: relative; }
 
 section img#cover { margin-top: 15px; }
 
-section a { color: #06c; }
+section a { color: #AECEEC; font-weight: bold; font-size: 17px; }
 
 section a:hover { text-decoration: underline; }
 
@@ -112,7 +112,7 @@ section ul#news li { margin-left: 45px; }
 
 section ul#news li:nth-last-of-type(1) { margin-bottom: 15px; }
 
-h1, h2, h3, h4, h5, h6 { color: #222; padding: 0; margin: 0 0 20px; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { padding: 0; margin: 0 0 20px; line-height: 1.2; }
 
 p, ul, ol, table, pre, dl { margin: 0 0 20px; }
 
@@ -124,23 +124,21 @@ section h2, section .spacing-top { margin-top: 40px !important; }
 
 section #latest-post-home-info { text-align: center; margin: 5px 0 5px; }
 
-h1 { font-size: 28px; }
+section .primary a, section #latest-post-home-info a { font-size: inherit; }
 
-h2 { color: #393939; }
-
-h3, h4, h5, h6 { color: #494949; }
+h1, h1 a { font-size: 28px; }
 
 h5.date { margin-top: 30px !important; }
 
-blockquote { margin: 0 -20px 20px; padding: 15px 20px 1px 40px; font-style: italic; background: #ccc; background: rgba(0, 0, 0, 0.06); color: #222; }
+blockquote { margin: 0 -20px 20px; padding: 15px 20px 1px 40px; font-style: italic; background: #ccc; background: rgba(0, 0, 0, 0.06); }
 
 img { max-width: 100%; }
 
-section img.screenshot { max-width: 40%; height: 100%; margin: 10px 30px 10px 0; transition: 0.5s; }
+section img.screenshot { max-width: 40%; height: 100%; margin: 10px 30px 10px 0; }
 
-section img.screenshot:hover { transform: scale(1.1); cursor: pointer; }
+section img.screenshot:hover { transform: scale(1.03); cursor: pointer; }
 
-code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal; color: #333; font-size: 14px; overflow-x: auto; }
+code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal; font-size: 14px; overflow-x: auto; }
 
 pre { padding: 20px; background: #3A3C42; color: #f8f8f2; margin: 0 -20px 20px; }
 pre code { color: #f8f8f2; }
@@ -150,9 +148,7 @@ table { width: 100%; border-collapse: collapse; }
 
 th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid #aaa; }
 
-dt { color: #222; font-weight: 700; }
-
-th { color: #222; }
+dt { font-weight: 700; }
 
 small { font-size: 11px; }
 
