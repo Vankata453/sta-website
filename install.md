@@ -5,6 +5,12 @@ layout: default
 
 # How to install SuperTux Advance?
 
+## Latest Stable Build
+
+You can download pre-built packages from here: https://kelvinshadewing.itch.io/supertux-advance
+
+## Install from GitHub
+
 To install SuperTux Advance, you need to download two things.
 
 1. A Brux Runtime nightly build - get it from [here](http://kelvinshadewing.net/dl/brux-nightly.zip){:target="_blank"}.
