@@ -33,8 +33,6 @@ If you have finished creating or improving a translation, you can contribute it 
 1. Choose a method to [contact us]({{ site.baseurl }}/contact) with and send us the `.json` file directly.
 2. [Open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request){:target="_blank"} to the [SuperTux Advance repository](https://github.com/KelvinShadewing/supertux-advance){:target="_blank"} (more info above).
 
-## Contributing through donations
+## Custom Worlds
 
-Donations go to [Kelvin Shadewing's Ko-Fi](https://ko-fi.com/kelvinshadewing){:target="_blank"}. Contributing 20 USD or more permanently adds you to the credits!
-
-Thank you for supporting development!
+We're currently experimenting with contributor worlds. At the moment, if you make a world, you can submit them over Discord or via a pull request on GitHub to the main repository. In the future, separate repositories will be used to allow players to subscribe to individual worlds.
